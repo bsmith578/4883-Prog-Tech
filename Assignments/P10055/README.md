@@ -21,6 +21,6 @@ program is to calculate the difference in size of both armys and print each diff
 - Compile and run the program from the command line. When running, redirect the input and output to your specified files
 - Examples for compiling and running
   - g++ main.cpp -o main
-  - ./main < <input> > <output>
+  - ./main < \<sample_input> > \<sample_output>
 
 ### Sources
