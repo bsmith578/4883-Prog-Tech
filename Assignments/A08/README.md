@@ -43,5 +43,4 @@ grid[i][j] is '0' or '1'.
 
 |   #   | File                       | Description                                                |
 | :---: | -------------------------- | ---------------------------------------------------------- |
-|   1   | [islands.cpp](./islands.cpp)     | solution file                                              |
-|   4   | [p200](./p10055.pdf)     | Problem Description                                 |
+|   1   | [islands.cpp](./islands.cpp)     | solution file                                        |
