@@ -5,3 +5,4 @@
 |  3  | [A07](./A07/) | LeetCode 215: Kth Largest Element in an Array |
 |  4  | [A08](./A08/) | LeetCode 200: Number of Islands |
 |  5  | [P125](./P125/) | LeetCode 125: Valid Palindrome |
+|  6  | [P1342](./P1342/) | LeetCode 1342: Number of Steps to Reduce a Number to 0 |
