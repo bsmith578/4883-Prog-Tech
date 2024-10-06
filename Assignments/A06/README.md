@@ -33,4 +33,4 @@ Output: [1]
 
 |   #   | File                       | Description                                                |
 | :---: | -------------------------- | ---------------------------------------------------------- |
-|   1   | [kth_largest](./kth_largest.cpp)     | solution file                                     |
+|   1   | [top_k.cpp](./top_k.cpp)     | solution file                                     |

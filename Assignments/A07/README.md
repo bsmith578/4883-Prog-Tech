@@ -33,4 +33,4 @@ Constraints:
 
 |   #   | File                       | Description                                                |
 | :---: | -------------------------- | ---------------------------------------------------------- |
-|   1   | [kth_largest](./kth_largest.cpp)     | solution file                                     |
+|   1   | [kth_largest.cpp](./kth_largest.cpp)     | solution file                                     |
