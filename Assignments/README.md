@@ -6,3 +6,4 @@
 |  4  | [A08](./A08/) | LeetCode 200: Number of Islands |
 |  5  | [P125](./P125/) | LeetCode 125: Valid Palindrome |
 |  6  | [P1342](./P1342/) | LeetCode 1342: Number of Steps to Reduce a Number to 0 |
+|  7  | [P2](./P2/) | LeetCode 2: Add Two Numbers |
