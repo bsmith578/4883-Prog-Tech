@@ -53,7 +53,7 @@ Output: 12
 
 ### Constraints:
 
-`0 <= num <= 106`
+`0 <= num <= 10^6`
 
 ### Files
 
