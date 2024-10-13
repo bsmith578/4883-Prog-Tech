@@ -8,3 +8,4 @@
 |  6  | [P1342](./P1342/) | LeetCode 1342: Number of Steps to Reduce a Number to 0 |
 |  7  | [P2](./P2/) | LeetCode 2: Add Two Numbers |
 |  8  | [A10](./A10/) | LeetCode 973: K Closest Points to Origin |
+|  9  | [P206](./P206/) | LeetCode 206: Reverse a Linked List |
