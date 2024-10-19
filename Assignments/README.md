@@ -11,3 +11,4 @@
 |  9  | [P206](./P206/) | LeetCode 206: Reverse a Linked List |
 | 10  | [P128](./P128/) | LeetCode 128: Longest Consecutive Sequence |
 | 11  | [P191](./P191/) | LeetCode 191: Number of 1 Bits |
+| 12  | [P7](./P7/) | LeetCode 7: Reverse Integer |
