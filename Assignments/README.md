@@ -12,3 +12,4 @@
 | 10  | [P128](./P128/) | LeetCode 128: Longest Consecutive Sequence |
 | 11  | [P191](./P191/) | LeetCode 191: Number of 1 Bits |
 | 12  | [P7](./P7/) | LeetCode 7: Reverse Integer |
+| 13  | [P794](./P794/) | LeetCode 794: Valid Tic-Tac-Toe Sequence |
