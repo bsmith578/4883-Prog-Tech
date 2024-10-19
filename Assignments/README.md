@@ -13,3 +13,4 @@
 | 11  | [P191](./P191/) | LeetCode 191: Number of 1 Bits |
 | 12  | [P7](./P7/) | LeetCode 7: Reverse Integer |
 | 13  | [P794](./P794/) | LeetCode 794: Valid Tic-Tac-Toe Sequence |
+| 14  | [P1281](./P1281/) | LeetCode 1281: Subtract the Product and Sum of Digits of an Integer |
