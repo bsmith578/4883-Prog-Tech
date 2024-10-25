@@ -22,5 +22,3 @@ program is to calculate the difference in size of both armys and print each diff
 - Examples for compiling and running
   - g++ main.cpp -o main
   - ./main < \<sample_input> > \<sample_output>
-
-### Sources

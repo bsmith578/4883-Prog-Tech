@@ -6,8 +6,6 @@ Given an integer num, return the number of steps to reduce it to zero.
 
 In one step, if the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it.
 
- 
-
 ### Example 1:
 
 Input: num = 14
@@ -49,7 +47,6 @@ Step 4) 1 is odd; subtract 1 and obtain 0.
 Input: num = 123
 
 Output: 12
- 
 
 ### Constraints:
 

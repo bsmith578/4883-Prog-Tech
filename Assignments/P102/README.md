@@ -21,9 +21,8 @@ Output: [[1]]
 Input: root = []
 
 Output: []
- 
 
-Constraints:
+### Constraints:
 
 `The number of nodes in the tree is in the range [0, 2000].`
 

@@ -6,9 +6,7 @@ Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0'
 
 An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
 
- 
-
-#### Example 1:
+### Example 1:
 
 Input: grid = [
   ["1","1","1","1","0"],
@@ -18,7 +16,7 @@ Input: grid = [
 
 Output: 1
 
-#### Example 2:
+### Example 2:
 
 Input: grid = [
   ["1","1","0","0","0"],
@@ -27,17 +25,16 @@ Input: grid = [
   ["0","0","0","1","1"]]
 
 Output: 3
- 
 
-#### Constraints:
+### Constraints:
 
-m == grid.length
+`m == grid.length`
 
-n == grid[i].length
+`n == grid[i].length`
 
-1 <= m, n <= 300
+`1 <= m, n <= 300`
 
-grid[i][j] is '0' or '1'.
+`grid[i][j] is '0' or '1'.`
 
 ### Files
 
