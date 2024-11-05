@@ -27,9 +27,6 @@ int main() {
             prices.push_back(temp);
         }
 
-        for(const auto& v : prices) {
-            for(int price : v)
-                cout << price << endl;
-        }
+        
     }
 }
