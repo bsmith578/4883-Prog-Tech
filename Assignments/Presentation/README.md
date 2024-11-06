@@ -8,4 +8,4 @@
 
 |   #   | File                       | Description                                                |
 | :---: | -------------------------- | ---------------------------------------------------------- |
-|   1   | []()     | solution file                                        |
+|   1   | [wedding_shopping.cpp](./wedding_shopping.cpp)     | solution file                      |
