@@ -1,3 +1,7 @@
+/*
+* Bottom-Up, iterative dynamic programming approach to UVa 11450: Wedding Shopping
+*/
+
 #include <iostream>
 #include <vector>
 
@@ -27,6 +31,15 @@ int main() {
             prices.push_back(temp);
         }
 
+        /* Create a bool DP table of size (M + 1) x (C + 1) and set each cell to false */
+        //Allows program to set a cell to true if 'm' dollars can be spent on each garment
+        //  within each category without exceeding the budget
+        
+        //Setting dp[0][0] to true means we can spend $0 on 0 garments, providing a
+        //  base case to start filling the table
+        bool dp[M + 1][C + 1];
+        fill(&dp[0][0], &dp[0][0] + ((M + 1) * (C + 1)), false);
+        dp[0][0] = true;
         
     }
 }
