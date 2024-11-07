@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-    //Number of test cases | Budget | Number of categories of garments | Number of garments in each category
+    //Number of test cases | Budget | Number of categories | Number of garments in each category
     int N, M, C, K;
 
     cin >> N;
@@ -28,7 +28,7 @@ int main() {
             for(int j = 0; j < K; j++)
                 cin >> temp[j];
 
-            prices.push_back(temp);
+            prices[i] = (temp);
         }
 
         /* Create a bool DP table of size (M + 1) x (C + 1) and set each cell to false */
@@ -37,18 +37,32 @@ int main() {
         
         //Setting dp[0][0] to true means we can spend $0 on 0 garments, providing a
         //  base case to start filling the table
-        //bool dp = new bool[M + 1][C + 1];
-        //fill(&dp[0][0], &dp[0][0] + ((M + 1) * (C + 1)), false);
-        //dp[0][0] = true;
-        
         vector<vector<bool>> dp(M + 1, vector<bool>(C + 1, false));
         dp[0][0] = true;
 
-        for(auto& v : dp) {
-            for(const auto& b : v)
-                cout << b << ' ';
-
-            cout << endl;
+        for(int cat = 1; cat <= C; cat++) {
+            for(int s = 0; s <= M; s++) {
+                if(dp[s][cat - 1]) {
+                    for(int price : prices[cat - 1]) {
+                        if(s + price <= M)
+                            dp[s + price][cat] = true;
+                    }
+                }
+            }
         }
+
+        int maxSpent = -1;
+        for(int mx = M; mx >=0; mx--) {
+            if(dp[mx][C]) {
+                maxSpent = mx;
+                break;
+            }
+        }
+
+        if(maxSpent == -1)
+            cout << "no solution\n";
+
+        else
+            cout << maxSpent << "\n";
     }
 }
