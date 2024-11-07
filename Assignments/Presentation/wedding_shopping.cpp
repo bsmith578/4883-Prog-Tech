@@ -37,9 +37,18 @@ int main() {
         
         //Setting dp[0][0] to true means we can spend $0 on 0 garments, providing a
         //  base case to start filling the table
-        bool dp[M + 1][C + 1];
-        fill(&dp[0][0], &dp[0][0] + ((M + 1) * (C + 1)), false);
-        dp[0][0] = true;
+        //bool dp = new bool[M + 1][C + 1];
+        //fill(&dp[0][0], &dp[0][0] + ((M + 1) * (C + 1)), false);
+        //dp[0][0] = true;
         
+        vector<vector<bool>> dp(M + 1, vector<bool>(C + 1, false));
+        dp[0][0] = true;
+
+        for(auto& v : dp) {
+            for(const auto& b : v)
+                cout << b << ' ';
+
+            cout << endl;
+        }
     }
 }
