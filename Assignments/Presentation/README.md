@@ -26,6 +26,10 @@ it prints `no solution`.
 
 `1 <= K <= 20`
 
+### Approach:
+
+Bottom-up, iterative dynamic programming approach. 
+
 ### Files
 
 |   #   | File                       | Description                                                |

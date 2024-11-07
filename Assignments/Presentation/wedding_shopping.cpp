@@ -1,7 +1,3 @@
-/*
-* Bottom-Up, iterative dynamic programming approach to UVa 11450: Wedding Shopping
-*/
-
 #include <iostream>
 #include <vector>
 
@@ -40,17 +36,20 @@ int main() {
         vector<vector<bool>> dp(M + 1, vector<bool>(C + 1, false));
         dp[0][0] = true;
 
-        for(int cat = 1; cat <= C; cat++) {
-            for(int s = 0; s <= M; s++) {
-                if(dp[s][cat - 1]) {
-                    for(int price : prices[cat - 1]) {
-                        if(s + price <= M)
-                            dp[s + price][cat] = true;
+        for(int cat = 1; cat <= C; cat++) {             //Loop through each category 1 to C
+            for(int s = 0; s <= M; s++) {               //Loop through each possible spending amount from 0 to M
+                if(dp[s][cat - 1]) {                    //Check if s dollars were spent in the previous category
+                    for(int price : prices[cat - 1]) {  //If so, iterate through each garment price within the current category
+                        if(s + price <= M)              //If the previous amount spent plus the price of the current garment is within budget,
+                            dp[s + price][cat] = true;  //set the value of that cell to true
                     }
                 }
             }
         }
 
+        //Set the variable maxSpent to -1 to indicate no money spent, and possibly no solution
+        //Loop from the highest value in the last column down to the lowest, if a value is found
+        //that is the most money that can be spent when all necessary garments are purchased
         int maxSpent = -1;
         for(int mx = M; mx >=0; mx--) {
             if(dp[mx][C]) {
@@ -59,6 +58,8 @@ int main() {
             }
         }
 
+        //If no values are found within the last column,
+        //maxSpent stays at -1 and there is no solution
         if(maxSpent == -1)
             cout << "no solution\n";
 
