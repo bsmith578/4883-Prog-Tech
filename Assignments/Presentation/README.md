@@ -30,6 +30,8 @@ it prints `no solution`.
 
 Bottom-up, iterative dynamic programming approach. 
 
+#### Step 1: Reading and Storing Initial Data
+
 ### Files
 
 |   #   | File                       | Description                                                |
