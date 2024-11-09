@@ -28,8 +28,8 @@ int main() {
         }
 
         /* Create a bool DP table of size (M + 1) x (C + 1) and set each cell to false */
-        //Allows program to set a cell to true if 'm' dollars can be spent on each garment
-        //  within each category without exceeding the budget
+        //Allows program to set a cell to true if 'm' dollars can be spent without going over
+        //  budget, where 'm' is the price of the current garment plus the price of the previous
         
         //Setting dp[0][0] to true means we can spend $0 on 0 garments, providing a
         //  base case to start filling the table
