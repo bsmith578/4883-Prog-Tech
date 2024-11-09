@@ -32,15 +32,15 @@ Bottom-up, iterative dynamic programming approach.
 
 * Step 1: Reading and Storing Initial Data
 
-  - ![reading](https://github.com/bsmith578/photos/blob/main/4883-Pres-Pics/reading_storing_initial.png)
+  ![reading](https://github.com/bsmith578/photos/blob/main/4883-Pres-Pics/reading_storing_initial.png)
 
 * Step 2: Creating and Filling the DP Table
 
-  - ![DP Table](https://github.com/bsmith578/photos/blob/main/4883-Pres-Pics/create_fill_dp.png)
+  ![DP Table](https://github.com/bsmith578/photos/blob/main/4883-Pres-Pics/create_fill_dp.png)
 
 * Step 3: Finding the Max Amount that can be spent
 
-  - ![maxSpent](https://github.com/bsmith578/photos/blob/main/4883-Pres-Pics/find_maxSpent.png)
+  ![maxSpent](https://github.com/bsmith578/photos/blob/main/4883-Pres-Pics/find_maxSpent.png)
 
 ### Files
 
