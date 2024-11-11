@@ -28,7 +28,8 @@ it prints `no solution`.
 
 ### Approach:
 
-Bottom-up, iterative dynamic programming approach. 
+Bottom-up, or tabulation, dynamic programming approach. This approach allows the program to store
+the results of each smaller subproblem and build upon each to eventually reach the desired end result.
 
 * Step 1: Reading and Storing Initial Data
 
