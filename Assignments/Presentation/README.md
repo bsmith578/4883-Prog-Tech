@@ -32,16 +32,40 @@ Bottom-up, or tabulation, dynamic programming approach. This approach allows the
 the results of each smaller subproblem and build upon each to eventually reach the desired end result.
 
 * Step 1: Reading and Storing Initial Data
+  1. Read in test cases iterate through each.
+  2. Create `prices` and fill with garment prices.
 
   ![reading](https://github.com/bsmith578/photos/blob/main/4883-Pres-Pics/reading_storing_initial.png)
 
 * Step 2: Creating and Filling the DP Table
+  1. Initialize a DP table, `dp`, using a 2D bool vector of size [M + 1][C + 1] where each cell starts as false
+  2. Set `dp[0][0]` to true. Provides a base case, or starting point, to fill the table.
+  3. Iterate over each column. If a cell is true, meaning you have already spent `s` dollars on `cat` categories of garments,
+     iterate through the garment prices in the current category. If the previous amount spent plus the price of the current
+     garment is less than the budget, set `dp[s + price][cat]` to true.
 
   ![DP Table](https://github.com/bsmith578/photos/blob/main/4883-Pres-Pics/create_fill_dp.png)
 
 * Step 3: Finding the Max Amount that can be spent
+  1. Start with `maxSpent = -1`. Allows to initially show that no money has been spent.
+  2. Iterate over the last column in the table from the bottom-up. The cell furthest at the bottom that is true
+     represents the maximum amount of money that can be spent from buying one garment from each category. If a
+     cell is found meeting the criteria, set its value to `maxSpent` and print it.
+  3. If no cell meets the criteria, `maxSpent` stays at -1, representing we could not stay in budget, and the program prints `no solution`.
 
   ![maxSpent](https://github.com/bsmith578/photos/blob/main/4883-Pres-Pics/find_maxSpent.png)
+
+### Associated Costs
+
+* Time Complexity
+  - The main loop of the program that fills the DP table generates the dominant time complexity as it
+    iterates through the categories(C), the budget(M), and number of garments in each category(K).
+    - *O*(C x M x K)
+ 
+* Space Complexity
+  - Here we have two 2D vectors, `prices` and `dp`, where the sizes `C x K` and `(M + 1) x (C + 1)` respectively
+    giving a final space complexity of:
+    - *O*(C x K + (M + 1) x (C + 1))
 
 ### Files
 
