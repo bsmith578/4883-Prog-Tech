@@ -58,13 +58,14 @@ the results of each smaller subproblem and build upon each to eventually reach t
 ### Associated Costs
 
 * Time Complexity
-  - The program loops through each test case(N), then filling the DP table generates the dominant time complexity
-    as it iterates through the categories(C), the budget(M), and number of garments in each category(K).
-    - *O*(N x C x M x K)
+  - Since filling the DP table generates the dominant time complexity as it iterates
+    through the categories(C), the budget(M), and number of garments in each category(K),
+    this gives a final time complexity of:
+    - *O*(C x M x K)
  
 * Space Complexity
-  - Here we have two 2D vectors, `prices` and `dp`, where the sizes `C x K` and `(M + 1) x (C + 1)` respectively
-    giving a final space complexity of:
+  - Here we have two 2D vectors, `prices` and `dp`, where the sizes are `C x K` and
+    `(M + 1) x (C + 1)` respectively, giving a final space complexity of:
     - *O*((C x K) + (M x C))
 
 ### Files
